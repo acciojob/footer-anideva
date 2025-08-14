@@ -1,1 +1,47 @@
 /* your code here */
+body {
+	margin:0;
+	font-family: Arial, sans-serif;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+	
+}
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 5%;
+	font-weight: bold;
+}
+
+.logo-details {
+	font-size: 1.5rem;
+}
+ .media-icons {
+	 display: inline-flex;
+	 justify-content: center;
+	 align-items: center;
+	  width: 36px;
+  height: 36px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+ }
+.media-icons a:hover {
+  background-color: #444;
+}
+
+.middle-section h4 {
+	 display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 5%;
+}
+
+
