@@ -37,11 +37,16 @@ footer {
   background-color: #444;
 }
 
-.middle-section h4 {
-	 display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 2rem 5%;
+footer {
+	display: flex;
+	justify-content: space-between;
+	
 }
 
+.bottom-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    background-color: grey;
+}
 
