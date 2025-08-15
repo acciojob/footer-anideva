@@ -1,71 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Footer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKz5DHg+50wS9tK1H31J7tA+57N/T2o9Xwz4G5Z+M6+xI5zP6G5+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to the separate CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-	    <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
+    <!-- Footer Section -->
+    <footer class="bg-gray-950 text-white pt-10 sm:pt-16 pb-4">
+        <div class="container mx-auto px-4">
+            
+            <!-- Top section with logo and social icons -->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-gray-700 pb-8 mb-8">
+                <div class="text-3xl font-bold mb-6 sm:mb-0">
+                    company
+                </div>
+                <div class="flex space-x-4">
+                    <!-- Social Media Icons (using Font Awesome) -->
+                    <a href="#" class="media-icons facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="media-icons twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="media-icons instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="media-icons linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="media-icons youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Main Content Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-10 mb-8 text-sm">
+                
+                <!-- Home Section -->
+                <div>
+                    <h5 class="font-semibold text-lg pb-3">Home</h5>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Home</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">About</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Links</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Services</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- About Section -->
+                <div>
+                    <h5 class="font-semibold text-lg pb-3">About</h5>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Our Mission</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Our Vision</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links Section -->
+                <div>
+                    <h5 class="font-semibold text-lg pb-3">Links</h5>
+                    <ul>
+                        <!-- Link to the website's homepage -->
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Homepage</a></li>
+                        <!-- Link to the website's about page -->
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">About Page</a></li>
+                        <!-- More pages of my choice -->
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Press</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Partnerships</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services Section -->
+                <div>
+                    <h5 class="font-semibold text-lg pb-3">Services</h5>
+                    <ul>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Service 1</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Service 2</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">Web Design</a></li>
+                        <li><a href="#" class="hover:text-gray-400 transition-colors duration-200">App Development</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Section -->
+                <div>
+                    <h5 class="font-semibold text-lg pb-3">Contact</h5>
+                    <ul class="space-y-2">
+                        <li>
+                            <p>Contact Number:</p>
+                            <a href="tel:+918879887262" class="hover:text-gray-400 transition-colors duration-200 text-sm md:text-base">8879887262</a>
+                        </li>
+                        <li>
+                            <p>Email:</p>
+                            <a href="mailto:contact@company.com" class="hover:text-gray-400 transition-colors duration-200 text-sm md:text-base">contact@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <!-- Bottom section with copyright and privacy policy -->
+            <div class="text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center pt-4 border-t border-gray-700">
+                <p class="mb-2 sm:mb-0">&copy; 2024 company. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-200 transition-colors duration-200">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-200 transition-colors duration-200">Terms of Service</a>
+                </div>
+            </div>
+            
         </div>
-        <div class="link-boxes">
-          <!-- your code here -->
-			<footer>
-				<div class="footer-section">
-					<h3>Home</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Links</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-				</div>
-				<div class="footer-section">
-        <h3>Contact</h3>
-        <p>Contact Number: <strong>8879887262</strong></p>
-    </div>
-    <div class="footer-section">
-        <h3>Services</h3>
-        <ul>
-            <li><a href="#">Service 1</a></li>
-            <li><a href="#">Service 2</a></li>
-        </ul>
-    </div>
-    <div class="footer-section">
-        <h3>Social Media</h3>
-        <div class="media-icons">
-            <a href="#"><img src="icon1.png" alt="icon1"></a>
-            <a href="#"><img src="icon2.png" alt="icon2"></a>
-            <a href="#"><img src="icon3.png" alt="icon3"></a>
-            <a href="#"><img src="icon4.png" alt="icon4"></a>
-            <a href="#"><img src="icon5.png" alt="icon5"></a>
-        </div>
-    </div>
-			</footer>
-			
-      <div class="bottom-details">
-        <!-- your code here -->
-		<p>Copyright © 2021 company.</p>
-		  <a href="#">Privacy policy</a>
-      </div>
     </footer>
-  </body>
+</body>
 </html>

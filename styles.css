@@ -1,52 +1,25 @@
-/* your code here */
 body {
-	margin:0;
-	font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
 }
-
-footer {
-	background-color: #000;
-	color: #fff;
-	
+/* Custom styling for icons to match the sample's rounded circles */
+.media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
 }
-.top {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1.5rem 5%;
-	font-weight: bold;
+.media-icons:hover {
+    transform: scale(1.1);
 }
-
-.logo-details {
-	font-size: 1.5rem;
+/* Color classes for each social media icon background */
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #55acee; }
+.instagram { 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
- .media-icons {
-	 display: inline-flex;
-	 justify-content: center;
-	 align-items: center;
-	  width: 36px;
-  height: 36px;
-  background-color: #222;
-  color: #fff;
-  border-radius: 50%;
-  margin-left: 0.5rem;
-  font-size: 0.9rem;
-  transition: background 0.3s;
- }
-.media-icons a:hover {
-  background-color: #444;
-}
-
-footer {
-	display: flex;
-	justify-content: space-between;
-	
-}
-
-.bottom-details {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-    background-color: grey;
-}
-
+.linkedin { background-color: #0077b5; }
+.youtube { background-color: #ff0000; }
